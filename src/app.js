@@ -57,4 +57,10 @@ window.onload = function() {
   let botonGenerador = document.querySelector("#botonGenerador");
 
   botonGenerador.addEventListener("click", renderNewRandomCard);
+
+  //Generador automático
+
+  setInterval(renderNewRandomCard, 10000);
+
+  renderNewRandomCard();
 };
